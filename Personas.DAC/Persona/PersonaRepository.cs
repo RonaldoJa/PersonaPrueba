@@ -49,6 +49,42 @@ namespace Personas.DAC.Persona
             return personas;
         }
 
+        public Personas.BE.Persona.Persona UpdatePerson(PersonaRequest personaRequest)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>();
+            parameters.Add(new SqlParameter { ParameterName = "@PersonaId", SqlDbType = SqlDbType.Int, Value = personaRequest.PersonadoId });
+            parameters.Add(new SqlParameter { ParameterName = "@Nombres", SqlDbType = SqlDbType.VarChar, Size = 100, Value = personaRequest.Nombres });
+            parameters.Add(new SqlParameter { ParameterName = "@Apellidos", SqlDbType = SqlDbType.VarChar, Size = 100, Value = personaRequest.Apellidos });
+            parameters.Add(new SqlParameter { ParameterName = "@NumeroIdentificacion", SqlDbType = SqlDbType.VarChar, Size = 20, Value = personaRequest.NumeroIdentificacion });
+            parameters.Add(new SqlParameter { ParameterName = "@Email", SqlDbType = SqlDbType.VarChar, Size = 150, Value = personaRequest.Email });
+            parameters.Add(new SqlParameter { ParameterName = "@TipoIdentificacion", SqlDbType = SqlDbType.VarChar, Size = 20, Value = personaRequest.TipoIdentificacion });
+
+
+            DataSet dataSet;
+            dataSet = _dbaccess.ExecuteFillSp("sp_ActualizarPersona", parameters.ToArray());
+
+            if (dataSet.Tables[0].Rows.Count == 0)
+                return null;
+
+            DataRow dataRow = dataSet.Tables[0].Rows[0];
+
+            Personas.BE.Persona.Persona persona = new Personas.BE.Persona.Persona
+                {
+                    Identificador = dataRow.GetCell<int>("Identificador"),
+                    Nombres = dataRow.GetCell<string>("Nombres"),
+                    Apellidos = dataRow.GetCell<string>("Apellidos"),
+                    NumeroIdentificacion = dataRow.GetCell<string>("NumeroIdentificacion"),
+                    Email = dataRow.GetCell<string>("Email"),
+                    TipoIdentificacion = dataRow.GetCell<string>("TipoIdentificacion"),
+                    FechaCreacion = dataRow.GetCell<DateTime>("FechaCreacion"),
+                    NumeroIdentificacionCompleto = dataRow.GetCell<string>("NumeroIdentificacionCompleto"),
+                    NombreCompleto = dataRow.GetCell<string>("NombreCompleto")
+                };
+
+
+            return persona;
+        }
+
         public bool InsertPersonAndUser(PersonaUsuarioModel personaUsuario)
         {
             List<SqlParameter> parameters = new List<SqlParameter>();

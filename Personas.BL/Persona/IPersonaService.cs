@@ -8,6 +8,7 @@ namespace Personas.BL.Persona
 	{
         Response<List<Personas.BE.Persona.Persona>> GetPerson();
         Response<Personas.BE.Persona.Persona> InsertPersonUser(PersonaUsuarioModel personaUsuario);
+        Response<Personas.BE.Persona.Persona> UpdatePerson(PersonaRequest personaRequest);
     }
 }
 

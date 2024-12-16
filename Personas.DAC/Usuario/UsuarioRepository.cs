@@ -6,6 +6,7 @@ using Personas.DAC.Helper;
 using System.Collections.Generic;
 using System.Reflection.PortableExecutable;
 using Personas.BE.Usuario;
+using Personas.BE.Persona;
 
 namespace Personas.DAC.Usuario
 {
@@ -103,6 +104,41 @@ namespace Personas.DAC.Usuario
                     NumeroIdentificacionCompleto = dataRow.GetCell<string>("NumeroIdentificacionCompleto"),
                     NombreCompleto = dataRow.GetCell<string>("NombreCompleto")
                 };
+
+            return usuario;
+        }
+
+        public Personas.BE.Usuario.UsuarioModel UpdateUser(UpdateUserRequest updateUser)
+        {
+
+            DataSet dataSet;
+            List<SqlParameter> parameters = new List<SqlParameter>();
+
+            parameters.Add(new SqlParameter { ParameterName = "@PersonaId", SqlDbType = SqlDbType.Int, Value = updateUser.PersonaId });
+            parameters.Add(new SqlParameter { ParameterName = "@Usuario", SqlDbType = SqlDbType.VarChar, Size = 50, Value = updateUser.Usuario });
+
+            dataSet = _dbaccess.ExecuteFillSp("sp_ActualizarUsuario", parameters.ToArray());
+
+            if (dataSet.Tables[0].Rows.Count == 0)
+                return null;
+
+
+            DataRow dataRow = dataSet.Tables[0].Rows[0];
+            Personas.BE.Usuario.UsuarioModel usuario = new Personas.BE.Usuario.UsuarioModel
+            {
+                UsuarioId = dataRow.GetCell<int>("UsuarioId"),
+                Usuario = dataRow.GetCell<string>("Usuario"),
+                FechaCreacionUsuario = dataRow.GetCell<DateTime>("FechaCreacionUsuario"),
+                PersonaId = dataRow.GetCell<int>("PersonaId"),
+                Nombres = dataRow.GetCell<string>("Nombres"),
+                Apellidos = dataRow.GetCell<string>("Apellidos"),
+                NumeroIdentificacion = dataRow.GetCell<string>("NumeroIdentificacion"),
+                Email = dataRow.GetCell<string>("Email"),
+                TipoIdentificacion = dataRow.GetCell<string>("TipoIdentificacion"),
+                FechaCreacionPersona = dataRow.GetCell<DateTime>("FechaCreacionPersona"),
+                NumeroIdentificacionCompleto = dataRow.GetCell<string>("NumeroIdentificacionCompleto"),
+                NombreCompleto = dataRow.GetCell<string>("NombreCompleto")
+            };
 
             return usuario;
         }

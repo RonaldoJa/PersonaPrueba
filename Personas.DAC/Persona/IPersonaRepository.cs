@@ -7,6 +7,7 @@ namespace Personas.DAC.Persona
 	{
         List<Personas.BE.Persona.Persona> GetPersons();
         bool InsertPersonAndUser(PersonaUsuarioModel personaUsuario);
+        Personas.BE.Persona.Persona UpdatePerson(PersonaRequest personaRequest);
 
     }
 }

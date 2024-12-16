@@ -1,5 +1,6 @@
 ﻿using System;
 using Personas.BE.Response;
+using Personas.BE.Usuario;
 using Personas.DAC.Persona;
 using Personas.DAC.Usuario;
 using Serilog;
@@ -52,6 +53,27 @@ namespace Personas.BL.Usuario
             catch (Exception ex)
             {
                 string message = string.Format("Message: {0} AND MethodName = {1}", ex.Message, "GetUserForId");
+                Log.Error(message);
+                return CreateErrorResponse(response, $"Revisar Log");
+            }
+        }
+
+        public Response<Personas.BE.Usuario.UsuarioModel> UpdateUser(UpdateUserRequest updateUser)
+        {
+            Response<Personas.BE.Usuario.UsuarioModel> response = new Response<Personas.BE.Usuario.UsuarioModel>();
+            Log.Information("Iniciando ejecucion UpdateUser");
+            try
+            {
+                Personas.BE.Usuario.UsuarioModel user = _usuarioRepostiory.UpdateUser(updateUser);
+                if (user == null)
+                {
+                    return CreateErrorResponse(response, "No se encontraron datos de usuarios.");
+                }
+                return CreateSuccessResponse(response, user);
+            }
+            catch (Exception ex)
+            {
+                string message = string.Format("Message: {0} AND MethodName = {1}", ex.Message, "UpdateUser");
                 Log.Error(message);
                 return CreateErrorResponse(response, $"Revisar Log");
             }

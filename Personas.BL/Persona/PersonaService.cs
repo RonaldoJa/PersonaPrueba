@@ -41,6 +41,27 @@ namespace Personas.BL.Persona
             }
         }
 
+        public Response<Personas.BE.Persona.Persona> UpdatePerson(PersonaRequest personaRequest)
+        {
+            Response<Personas.BE.Persona.Persona> response = new Response<Personas.BE.Persona.Persona>();
+            Log.Information("Iniciando ejecucion UpdatePerson");
+            try
+            {
+                Personas.BE.Persona.Persona person = _persona.UpdatePerson(personaRequest);
+                if (person == null)
+                {
+                    return CreateErrorResponse(response, "No se encontraron datos de personas.");
+                }
+                return CreateSuccessResponse(response, person);
+            }
+            catch (Exception ex)
+            {
+                string message = string.Format("Message: {0} AND MethodName = {1}", ex.Message, "UpdatePerson");
+                Log.Error(message);
+                return CreateErrorResponse(response, $"Revisar Log");
+            }
+        }
+
         public Response<Personas.BE.Persona.Persona> InsertPersonUser(PersonaUsuarioModel personaUsuario)
         {
             Response<Personas.BE.Persona.Persona> response = new Response<Personas.BE.Persona.Persona>();

@@ -757,3 +757,74 @@ DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
 2024-12-16 05:00:44.999 -05:00 [INF] Executed action Personas.Controllers.UsuarioController.ConsultarUsuario (Personas) in 7.0885ms
 2024-12-16 05:00:44.999 -05:00 [INF] Executed endpoint 'Personas.Controllers.UsuarioController.ConsultarUsuario (Personas)'
 2024-12-16 05:00:44.999 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7204/api/Usuario/consultarUsuario/2 - - - 200 - application/json;+charset=utf-8 8.2220ms
+2024-12-16 05:32:01.607 -05:00 [INF] User profile is available. Using '/Users/ronaldo/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-12-16 05:32:02.018 -05:00 [INF] Now listening on: https://localhost:7204
+2024-12-16 05:32:02.019 -05:00 [INF] Now listening on: http://localhost:5224
+2024-12-16 05:32:02.048 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-16 05:32:02.048 -05:00 [INF] Hosting environment: Development
+2024-12-16 05:32:02.048 -05:00 [INF] Content root path: /Users/ronaldo/Projects/Personas/Personas
+2024-12-16 05:32:04.254 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7204/swagger/index.html - -
+2024-12-16 05:32:04.401 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7204/swagger/index.html - - - 200 - text/html;charset=utf-8 147.4645ms
+2024-12-16 05:32:04.600 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7204/swagger/v1/swagger.json - -
+2024-12-16 05:32:04.656 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7204/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 55.7868ms
+2024-12-16 05:32:51.372 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7204/api/Person/update application/json 174
+2024-12-16 05:32:51.391 -05:00 [INF] CORS policy execution failed.
+2024-12-16 05:32:51.392 -05:00 [INF] Request origin https://localhost:7204 does not have permission to access the resource.
+2024-12-16 05:32:51.405 -05:00 [INF] Executing endpoint 'Personas.Controllers.PersonController.UpdatePerson (Personas)'
+2024-12-16 05:32:51.431 -05:00 [INF] Route matched with {action = "UpdatePerson", controller = "Person"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdatePerson(Personas.BE.Persona.PersonaRequest) on controller Personas.Controllers.PersonController (Personas).
+2024-12-16 05:32:51.460 -05:00 [INF] Iniciando ejecucion UpdatePerson
+2024-12-16 05:32:51.720 -05:00 [INF] Executing OkObjectResult, writing value of type 'Personas.BE.Response.Response`1[[Personas.BE.Persona.Persona, Personas.BE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-16 05:32:51.728 -05:00 [INF] Executed action Personas.Controllers.PersonController.UpdatePerson (Personas) in 295.2967ms
+2024-12-16 05:32:51.731 -05:00 [INF] Executed endpoint 'Personas.Controllers.PersonController.UpdatePerson (Personas)'
+2024-12-16 05:32:51.731 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7204/api/Person/update application/json 174 - 200 - application/json;+charset=utf-8 359.3756ms
+2024-12-16 05:46:37.707 -05:00 [INF] User profile is available. Using '/Users/ronaldo/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-12-16 05:46:38.101 -05:00 [INF] Now listening on: https://localhost:7204
+2024-12-16 05:46:38.101 -05:00 [INF] Now listening on: http://localhost:5224
+2024-12-16 05:46:38.129 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-16 05:46:38.129 -05:00 [INF] Hosting environment: Development
+2024-12-16 05:46:38.130 -05:00 [INF] Content root path: /Users/ronaldo/Projects/Personas/Personas
+2024-12-16 05:46:40.308 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7204/swagger/index.html - -
+2024-12-16 05:46:40.422 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7204/swagger/index.html - - - 200 - text/html;charset=utf-8 115.5673ms
+2024-12-16 05:46:40.623 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7204/swagger/v1/swagger.json - -
+2024-12-16 05:46:40.674 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7204/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 50.4426ms
+2024-12-16 05:47:23.779 -05:00 [INF] User profile is available. Using '/Users/ronaldo/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-12-16 05:47:24.186 -05:00 [INF] Now listening on: https://localhost:7204
+2024-12-16 05:47:24.187 -05:00 [INF] Now listening on: http://localhost:5224
+2024-12-16 05:47:24.188 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-16 05:47:24.189 -05:00 [INF] Hosting environment: Development
+2024-12-16 05:47:24.189 -05:00 [INF] Content root path: /Users/ronaldo/Projects/Personas/Personas
+2024-12-16 05:47:25.519 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7204/swagger/index.html - -
+2024-12-16 05:47:25.632 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7204/swagger/index.html - - - 200 - text/html;charset=utf-8 114.5383ms
+2024-12-16 05:47:25.714 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7204/swagger/v1/swagger.json - -
+2024-12-16 05:47:25.771 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7204/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 57.1173ms
+2024-12-16 05:47:59.979 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7204/api/Usuario/actualizarUsuario application/json 43
+2024-12-16 05:47:59.993 -05:00 [INF] CORS policy execution failed.
+2024-12-16 05:47:59.994 -05:00 [INF] Request origin https://localhost:7204 does not have permission to access the resource.
+2024-12-16 05:48:00.002 -05:00 [INF] Executing endpoint 'Personas.Controllers.UsuarioController.ActualizarUsuario (Personas)'
+2024-12-16 05:48:00.022 -05:00 [INF] Route matched with {action = "ActualizarUsuario", controller = "Usuario"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ActualizarUsuario(Personas.BE.Usuario.UpdateUserRequest) on controller Personas.Controllers.UsuarioController (Personas).
+2024-12-16 05:48:00.047 -05:00 [INF] Iniciando ejecucion UpdateUser
+2024-12-16 05:48:27.892 -05:00 [ERR] Message: Invalid object name 'Persona'. AND MethodName = UpdateUser
+2024-12-16 05:48:27.897 -05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Personas.BE.Response.Response`1[[Personas.BE.Usuario.UsuarioModel, Personas.BE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-16 05:48:27.904 -05:00 [INF] Executed action Personas.Controllers.UsuarioController.ActualizarUsuario (Personas) in 27880.9507ms
+2024-12-16 05:48:27.906 -05:00 [INF] Executed endpoint 'Personas.Controllers.UsuarioController.ActualizarUsuario (Personas)'
+2024-12-16 05:48:27.906 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7204/api/Usuario/actualizarUsuario application/json 43 - 400 - application/json;+charset=utf-8 27927.8344ms
+2024-12-16 05:48:49.684 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7204/api/Usuario/actualizarUsuario application/json 43
+2024-12-16 05:48:49.694 -05:00 [INF] CORS policy execution failed.
+2024-12-16 05:48:49.694 -05:00 [INF] Request origin https://localhost:7204 does not have permission to access the resource.
+2024-12-16 05:48:49.696 -05:00 [INF] Executing endpoint 'Personas.Controllers.UsuarioController.ActualizarUsuario (Personas)'
+2024-12-16 05:48:49.698 -05:00 [INF] Route matched with {action = "ActualizarUsuario", controller = "Usuario"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ActualizarUsuario(Personas.BE.Usuario.UpdateUserRequest) on controller Personas.Controllers.UsuarioController (Personas).
+2024-12-16 05:48:49.703 -05:00 [INF] Iniciando ejecucion UpdateUser
+2024-12-16 05:48:49.763 -05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Personas.BE.Response.Response`1[[Personas.BE.Usuario.UsuarioModel, Personas.BE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-16 05:48:49.764 -05:00 [INF] Executed action Personas.Controllers.UsuarioController.ActualizarUsuario (Personas) in 66.1448ms
+2024-12-16 05:48:49.764 -05:00 [INF] Executed endpoint 'Personas.Controllers.UsuarioController.ActualizarUsuario (Personas)'
+2024-12-16 05:48:49.764 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7204/api/Usuario/actualizarUsuario application/json 43 - 400 - application/json;+charset=utf-8 81.3197ms
+2024-12-16 05:49:28.811 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7204/api/Usuario/actualizarUsuario application/json 43
+2024-12-16 05:49:28.815 -05:00 [INF] CORS policy execution failed.
+2024-12-16 05:49:28.815 -05:00 [INF] Request origin https://localhost:7204 does not have permission to access the resource.
+2024-12-16 05:49:28.816 -05:00 [INF] Executing endpoint 'Personas.Controllers.UsuarioController.ActualizarUsuario (Personas)'
+2024-12-16 05:49:28.816 -05:00 [INF] Route matched with {action = "ActualizarUsuario", controller = "Usuario"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ActualizarUsuario(Personas.BE.Usuario.UpdateUserRequest) on controller Personas.Controllers.UsuarioController (Personas).
+2024-12-16 05:49:28.822 -05:00 [INF] Iniciando ejecucion UpdateUser
+2024-12-16 05:49:28.879 -05:00 [INF] Executing OkObjectResult, writing value of type 'Personas.BE.Response.Response`1[[Personas.BE.Usuario.UsuarioModel, Personas.BE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-16 05:49:28.883 -05:00 [INF] Executed action Personas.Controllers.UsuarioController.ActualizarUsuario (Personas) in 66.3031ms
+2024-12-16 05:49:28.883 -05:00 [INF] Executed endpoint 'Personas.Controllers.UsuarioController.ActualizarUsuario (Personas)'
+2024-12-16 05:49:28.883 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7204/api/Usuario/actualizarUsuario application/json 43 - 200 - application/json;+charset=utf-8 72.3448ms

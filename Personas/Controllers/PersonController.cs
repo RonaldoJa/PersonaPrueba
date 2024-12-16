@@ -48,6 +48,23 @@ namespace Personas.Controllers
             return Ok(response);
             
         }
+
+        [HttpPost("update")]
+        public IActionResult UpdatePerson([FromBody] PersonaRequest personaRequest)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest("Modelo no valido");
+            }
+
+            var response = _persona.UpdatePerson(personaRequest);
+            if (response.Error)
+            {
+                return BadRequest(response);
+            }
+            return Ok(response);
+
+        }
     }
 }
 

@@ -68,6 +68,17 @@ namespace Personas.Controllers
             }
             return Ok(response);
         }
+
+        [HttpPost("actualizarUsuario")]
+        public IActionResult ActualizarUsuario([FromBody]UpdateUserRequest updateUser)
+        {
+            Response<UsuarioModel> response = _usuario.UpdateUser(updateUser);
+            if (response.Error)
+            {
+                return BadRequest(response);
+            }
+            return Ok(response);
+        }
     }
 }
 
