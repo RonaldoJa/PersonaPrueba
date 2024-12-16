@@ -1,0 +1,15 @@
+/Users/ronaldo/Projects/Personas/Personas.DAC/bin/Debug/net7.0/Personas.DAC.deps.json
+/Users/ronaldo/Projects/Personas/Personas.DAC/bin/Debug/net7.0/Personas.DAC.dll
+/Users/ronaldo/Projects/Personas/Personas.DAC/bin/Debug/net7.0/Personas.DAC.pdb
+/Users/ronaldo/Projects/Personas/Personas.DAC/obj/Debug/net7.0/Personas.DAC.csproj.AssemblyReference.cache
+/Users/ronaldo/Projects/Personas/Personas.DAC/obj/Debug/net7.0/Personas.DAC.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ronaldo/Projects/Personas/Personas.DAC/obj/Debug/net7.0/Personas.DAC.AssemblyInfoInputs.cache
+/Users/ronaldo/Projects/Personas/Personas.DAC/obj/Debug/net7.0/Personas.DAC.AssemblyInfo.cs
+/Users/ronaldo/Projects/Personas/Personas.DAC/obj/Debug/net7.0/Personas.DAC.csproj.CoreCompileInputs.cache
+/Users/ronaldo/Projects/Personas/Personas.DAC/obj/Debug/net7.0/Personas.DAC.dll
+/Users/ronaldo/Projects/Personas/Personas.DAC/obj/Debug/net7.0/refint/Personas.DAC.dll
+/Users/ronaldo/Projects/Personas/Personas.DAC/obj/Debug/net7.0/Personas.DAC.pdb
+/Users/ronaldo/Projects/Personas/Personas.DAC/obj/Debug/net7.0/ref/Personas.DAC.dll
+/Users/ronaldo/Projects/Personas/Personas.DAC/bin/Debug/net7.0/Personas.BE.dll
+/Users/ronaldo/Projects/Personas/Personas.DAC/bin/Debug/net7.0/Personas.BE.pdb
+/Users/ronaldo/Projects/Personas/Personas.DAC/obj/Debug/net7.0/Personas.DAC.csproj.CopyComplete

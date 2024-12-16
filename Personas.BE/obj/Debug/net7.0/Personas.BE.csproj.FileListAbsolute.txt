@@ -1,0 +1,12 @@
+/Users/ronaldo/Projects/Personas/Personas.BE/bin/Debug/net7.0/Personas.BE.deps.json
+/Users/ronaldo/Projects/Personas/Personas.BE/bin/Debug/net7.0/Personas.BE.dll
+/Users/ronaldo/Projects/Personas/Personas.BE/bin/Debug/net7.0/Personas.BE.pdb
+/Users/ronaldo/Projects/Personas/Personas.BE/obj/Debug/net7.0/Personas.BE.csproj.AssemblyReference.cache
+/Users/ronaldo/Projects/Personas/Personas.BE/obj/Debug/net7.0/Personas.BE.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ronaldo/Projects/Personas/Personas.BE/obj/Debug/net7.0/Personas.BE.AssemblyInfoInputs.cache
+/Users/ronaldo/Projects/Personas/Personas.BE/obj/Debug/net7.0/Personas.BE.AssemblyInfo.cs
+/Users/ronaldo/Projects/Personas/Personas.BE/obj/Debug/net7.0/Personas.BE.csproj.CoreCompileInputs.cache
+/Users/ronaldo/Projects/Personas/Personas.BE/obj/Debug/net7.0/Personas.BE.dll
+/Users/ronaldo/Projects/Personas/Personas.BE/obj/Debug/net7.0/refint/Personas.BE.dll
+/Users/ronaldo/Projects/Personas/Personas.BE/obj/Debug/net7.0/Personas.BE.pdb
+/Users/ronaldo/Projects/Personas/Personas.BE/obj/Debug/net7.0/ref/Personas.BE.dll
