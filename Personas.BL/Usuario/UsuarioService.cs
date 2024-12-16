@@ -35,6 +35,27 @@ namespace Personas.BL.Usuario
                 return CreateErrorResponseList(response, $"Revisar Log");
             }
         }
+
+        public Response<Personas.BE.Usuario.UsuarioModel> GetUserForId(int userId)
+        {
+            Response<Personas.BE.Usuario.UsuarioModel> response = new Response<Personas.BE.Usuario.UsuarioModel>();
+            Log.Information("Iniciando ejecucion GetUserForId");
+            try
+            {
+                Personas.BE.Usuario.UsuarioModel user = _usuarioRepostiory.GetUser(userId);
+                if (user == null)
+                {
+                    return CreateErrorResponse(response, "No se encontraron datos de usuarios.");
+                }
+                return CreateSuccessResponse(response, user);
+            }
+            catch (Exception ex)
+            {
+                string message = string.Format("Message: {0} AND MethodName = {1}", ex.Message, "GetUserForId");
+                Log.Error(message);
+                return CreateErrorResponse(response, $"Revisar Log");
+            }
+        }
     }
 }
 

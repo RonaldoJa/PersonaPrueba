@@ -73,6 +73,39 @@ namespace Personas.DAC.Usuario
 
             return usuarios;
         }
+
+        public Personas.BE.Usuario.UsuarioModel GetUser(int userId)
+        {
+
+            DataSet dataSet;
+            List<SqlParameter> parameters = new List<SqlParameter>();
+
+            parameters.Add(new SqlParameter { ParameterName = "@UsuarioId", SqlDbType = SqlDbType.Int, Value = userId });
+            dataSet = _dbaccess.ExecuteFillSp("sp_ConsultarUsuarioSolo", parameters.ToArray());
+
+            if (dataSet.Tables[0].Rows.Count == 0)
+                return null;
+
+
+            DataRow dataRow = dataSet.Tables[0].Rows[0];
+            Personas.BE.Usuario.UsuarioModel usuario = new Personas.BE.Usuario.UsuarioModel
+                {
+                    UsuarioId = dataRow.GetCell<int>("UsuarioId"),
+                    Usuario = dataRow.GetCell<string>("Usuario"),
+                    FechaCreacionUsuario = dataRow.GetCell<DateTime>("FechaCreacionUsuario"),
+                    PersonaId = dataRow.GetCell<int>("PersonaId"),
+                    Nombres = dataRow.GetCell<string>("Nombres"),
+                    Apellidos = dataRow.GetCell<string>("Apellidos"),
+                    NumeroIdentificacion = dataRow.GetCell<string>("NumeroIdentificacion"),
+                    Email = dataRow.GetCell<string>("Email"),
+                    TipoIdentificacion = dataRow.GetCell<string>("TipoIdentificacion"),
+                    FechaCreacionPersona = dataRow.GetCell<DateTime>("FechaCreacionPersona"),
+                    NumeroIdentificacionCompleto = dataRow.GetCell<string>("NumeroIdentificacionCompleto"),
+                    NombreCompleto = dataRow.GetCell<string>("NombreCompleto")
+                };
+
+            return usuario;
+        }
     }
 }
 

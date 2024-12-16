@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Personas.BE.Response;
 using Personas.BE.Usuario;
 using Personas.BL.Persona;
 using Personas.BL.Usuario;
@@ -28,9 +29,21 @@ namespace Personas.Controllers
         [HttpGet]
         public IActionResult GetUsers()
         {
+            Response<List<UsuarioModel>> response = _usuario.GetUsers();
+            if (response.Error)
+            {
+                return BadRequest(response);
+            }
+            return Ok(response);
+
+        }
+
+        [HttpPost("Login")]
+        public IActionResult Login([FromBody] LoginModel loginModel)
+        {
             try
             {
-                var response = _usuario.GetUsers();
+                Response<LoginToken> response = _authService.LoginUser(loginModel);
                 if (response.Error)
                 {
                     return BadRequest(response);
@@ -45,24 +58,15 @@ namespace Personas.Controllers
 
         }
 
-        [HttpPost("Login")]
-        public IActionResult Login([FromBody] LoginModel loginModel)
+        [HttpGet("consultarUsuario/{usuarioId}")]
+        public IActionResult ConsultarUsuario(int usuarioId)
         {
-            try
+            Response<UsuarioModel> response = _usuario.GetUserForId(usuarioId);
+            if (response.Error)
             {
-                var response = _authService.LoginUser(loginModel);
-                if (response.Error)
-                {
-                    return BadRequest(response);
-                }
-                return Ok(response);
+                return BadRequest(response);
             }
-            catch (Exception ex)
-            {
-                string error = ex.GetBaseException().Message;
-                return StatusCode(500, new { message = $"Ocurrió un error inesperado: {error}" });
-            }
-
+            return Ok(response);
         }
     }
 }

@@ -7,6 +7,7 @@ namespace Personas.DAC.Usuario
 	{
         public List<Personas.BE.Usuario.UsuarioModel> GetUsers();
         LoginResponse LoginUser(LoginModel loginModel);
+        Personas.BE.Usuario.UsuarioModel GetUser(int userId);
 
     }
 }

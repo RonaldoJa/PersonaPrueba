@@ -631,3 +631,129 @@ DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
 DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
 2024-12-16 04:24:52.930 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
 2024-12-16 04:24:52.931 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7204/api/Usuario - - - 401 0 - 1.6450ms
+2024-12-16 04:57:33.756 -05:00 [INF] User profile is available. Using '/Users/ronaldo/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-12-16 04:57:34.133 -05:00 [INF] Now listening on: https://localhost:7204
+2024-12-16 04:57:34.134 -05:00 [INF] Now listening on: http://localhost:5224
+2024-12-16 04:57:34.186 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-16 04:57:34.187 -05:00 [INF] Hosting environment: Development
+2024-12-16 04:57:34.188 -05:00 [INF] Content root path: /Users/ronaldo/Projects/Personas/Personas
+2024-12-16 04:57:35.912 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7204/swagger/index.html - -
+2024-12-16 04:57:36.053 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7204/swagger/index.html - - - 200 - text/html;charset=utf-8 141.6613ms
+2024-12-16 04:57:36.271 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7204/swagger/v1/swagger.json - -
+2024-12-16 04:57:36.414 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7204/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 142.2987ms
+2024-12-16 04:57:44.196 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7204/api/Usuario/consultarUsuario/1 - -
+2024-12-16 04:57:44.209 -05:00 [INF] Executing endpoint 'Personas.Controllers.UsuarioController.ConsultarUsuario (Personas)'
+2024-12-16 04:57:44.236 -05:00 [INF] Route matched with {action = "ConsultarUsuario", controller = "Usuario"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ConsultarUsuario(Int32) on controller Personas.Controllers.UsuarioController (Personas).
+2024-12-16 04:57:44.250 -05:00 [INF] Iniciando ejecucion GetUserForId
+2024-12-16 04:57:55.551 -05:00 [ERR] Message: Could not find stored procedure 'sp_ConsultarUsuarioSolo
+'. AND MethodName = GetUserForId
+2024-12-16 04:57:55.557 -05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Personas.BE.Response.Response`1[[Personas.BE.Usuario.UsuarioModel, Personas.BE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-16 04:57:55.566 -05:00 [INF] Executed action Personas.Controllers.UsuarioController.ConsultarUsuario (Personas) in 11328.2181ms
+2024-12-16 04:57:55.568 -05:00 [INF] Executed endpoint 'Personas.Controllers.UsuarioController.ConsultarUsuario (Personas)'
+2024-12-16 04:57:55.568 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7204/api/Usuario/consultarUsuario/1 - - - 400 - application/json;+charset=utf-8 11372.8662ms
+2024-12-16 04:58:10.960 -05:00 [INF] User profile is available. Using '/Users/ronaldo/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-12-16 04:58:11.297 -05:00 [INF] Now listening on: https://localhost:7204
+2024-12-16 04:58:11.297 -05:00 [INF] Now listening on: http://localhost:5224
+2024-12-16 04:58:11.298 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-16 04:58:11.298 -05:00 [INF] Hosting environment: Development
+2024-12-16 04:58:11.298 -05:00 [INF] Content root path: /Users/ronaldo/Projects/Personas/Personas
+2024-12-16 04:58:12.553 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7204/swagger/index.html - -
+2024-12-16 04:58:12.672 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7204/swagger/index.html - - - 200 - text/html;charset=utf-8 119.1283ms
+2024-12-16 04:58:12.775 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7204/swagger/v1/swagger.json - -
+2024-12-16 04:58:12.824 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7204/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 48.9478ms
+2024-12-16 04:58:17.887 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7204/api/Usuario/consultarUsuario/1 - -
+2024-12-16 04:58:17.905 -05:00 [INF] Executing endpoint 'Personas.Controllers.UsuarioController.ConsultarUsuario (Personas)'
+2024-12-16 04:58:17.930 -05:00 [INF] Route matched with {action = "ConsultarUsuario", controller = "Usuario"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ConsultarUsuario(Int32) on controller Personas.Controllers.UsuarioController (Personas).
+2024-12-16 04:58:17.943 -05:00 [INF] Iniciando ejecucion GetUserForId
+2024-12-16 04:58:18.179 -05:00 [INF] Executing OkObjectResult, writing value of type 'Personas.BE.Response.Response`1[[Personas.BE.Usuario.UsuarioModel, Personas.BE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-16 04:58:18.187 -05:00 [INF] Executed action Personas.Controllers.UsuarioController.ConsultarUsuario (Personas) in 255.1907ms
+2024-12-16 04:58:18.188 -05:00 [INF] Executed endpoint 'Personas.Controllers.UsuarioController.ConsultarUsuario (Personas)'
+2024-12-16 04:58:18.188 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7204/api/Usuario/consultarUsuario/1 - - - 200 - application/json;+charset=utf-8 301.4755ms
+2024-12-16 04:58:29.257 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7204/api/Usuario/consultarUsuario/2 - -
+2024-12-16 04:58:29.259 -05:00 [INF] Executing endpoint 'Personas.Controllers.UsuarioController.ConsultarUsuario (Personas)'
+2024-12-16 04:58:29.260 -05:00 [INF] Route matched with {action = "ConsultarUsuario", controller = "Usuario"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ConsultarUsuario(Int32) on controller Personas.Controllers.UsuarioController (Personas).
+2024-12-16 04:58:29.262 -05:00 [INF] Iniciando ejecucion GetUserForId
+2024-12-16 04:58:29.270 -05:00 [INF] Executing OkObjectResult, writing value of type 'Personas.BE.Response.Response`1[[Personas.BE.Usuario.UsuarioModel, Personas.BE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-16 04:58:29.273 -05:00 [INF] Executed action Personas.Controllers.UsuarioController.ConsultarUsuario (Personas) in 13.4914ms
+2024-12-16 04:58:29.274 -05:00 [INF] Executed endpoint 'Personas.Controllers.UsuarioController.ConsultarUsuario (Personas)'
+2024-12-16 04:58:29.274 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7204/api/Usuario/consultarUsuario/2 - - - 200 - application/json;+charset=utf-8 17.0339ms
+2024-12-16 04:58:33.268 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7204/api/Usuario/consultarUsuario/3 - -
+2024-12-16 04:58:33.269 -05:00 [INF] Executing endpoint 'Personas.Controllers.UsuarioController.ConsultarUsuario (Personas)'
+2024-12-16 04:58:33.269 -05:00 [INF] Route matched with {action = "ConsultarUsuario", controller = "Usuario"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ConsultarUsuario(Int32) on controller Personas.Controllers.UsuarioController (Personas).
+2024-12-16 04:58:33.272 -05:00 [INF] Iniciando ejecucion GetUserForId
+2024-12-16 04:58:33.278 -05:00 [INF] Executing OkObjectResult, writing value of type 'Personas.BE.Response.Response`1[[Personas.BE.Usuario.UsuarioModel, Personas.BE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-16 04:58:33.279 -05:00 [INF] Executed action Personas.Controllers.UsuarioController.ConsultarUsuario (Personas) in 9.9378ms
+2024-12-16 04:58:33.279 -05:00 [INF] Executed endpoint 'Personas.Controllers.UsuarioController.ConsultarUsuario (Personas)'
+2024-12-16 04:58:33.279 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7204/api/Usuario/consultarUsuario/3 - - - 200 - application/json;+charset=utf-8 10.8908ms
+2024-12-16 04:58:36.237 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7204/api/Usuario/consultarUsuario/66 - -
+2024-12-16 04:58:36.238 -05:00 [INF] Executing endpoint 'Personas.Controllers.UsuarioController.ConsultarUsuario (Personas)'
+2024-12-16 04:58:36.238 -05:00 [INF] Route matched with {action = "ConsultarUsuario", controller = "Usuario"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ConsultarUsuario(Int32) on controller Personas.Controllers.UsuarioController (Personas).
+2024-12-16 04:58:36.239 -05:00 [INF] Iniciando ejecucion GetUserForId
+2024-12-16 04:58:36.263 -05:00 [INF] Executing OkObjectResult, writing value of type 'Personas.BE.Response.Response`1[[Personas.BE.Usuario.UsuarioModel, Personas.BE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-16 04:58:36.263 -05:00 [INF] Executed action Personas.Controllers.UsuarioController.ConsultarUsuario (Personas) in 24.8929ms
+2024-12-16 04:58:36.264 -05:00 [INF] Executed endpoint 'Personas.Controllers.UsuarioController.ConsultarUsuario (Personas)'
+2024-12-16 04:58:36.264 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7204/api/Usuario/consultarUsuario/66 - - - 200 - application/json;+charset=utf-8 26.5158ms
+2024-12-16 04:58:47.198 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7204/api/Usuario/consultarUsuario/66 - -
+2024-12-16 04:58:47.199 -05:00 [INF] Executing endpoint 'Personas.Controllers.UsuarioController.ConsultarUsuario (Personas)'
+2024-12-16 04:58:47.199 -05:00 [INF] Route matched with {action = "ConsultarUsuario", controller = "Usuario"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ConsultarUsuario(Int32) on controller Personas.Controllers.UsuarioController (Personas).
+2024-12-16 04:58:47.200 -05:00 [INF] Iniciando ejecucion GetUserForId
+2024-12-16 04:58:47.204 -05:00 [INF] Executing OkObjectResult, writing value of type 'Personas.BE.Response.Response`1[[Personas.BE.Usuario.UsuarioModel, Personas.BE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-16 04:58:47.205 -05:00 [INF] Executed action Personas.Controllers.UsuarioController.ConsultarUsuario (Personas) in 5.0415ms
+2024-12-16 04:58:47.205 -05:00 [INF] Executed endpoint 'Personas.Controllers.UsuarioController.ConsultarUsuario (Personas)'
+2024-12-16 04:58:47.205 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7204/api/Usuario/consultarUsuario/66 - - - 200 - application/json;+charset=utf-8 6.3769ms
+2024-12-16 04:58:47.911 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7204/api/Usuario/consultarUsuario/66 - -
+2024-12-16 04:58:47.911 -05:00 [INF] Executing endpoint 'Personas.Controllers.UsuarioController.ConsultarUsuario (Personas)'
+2024-12-16 04:58:47.911 -05:00 [INF] Route matched with {action = "ConsultarUsuario", controller = "Usuario"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ConsultarUsuario(Int32) on controller Personas.Controllers.UsuarioController (Personas).
+2024-12-16 04:58:47.912 -05:00 [INF] Iniciando ejecucion GetUserForId
+2024-12-16 04:58:47.918 -05:00 [INF] Executing OkObjectResult, writing value of type 'Personas.BE.Response.Response`1[[Personas.BE.Usuario.UsuarioModel, Personas.BE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-16 04:58:47.918 -05:00 [INF] Executed action Personas.Controllers.UsuarioController.ConsultarUsuario (Personas) in 6.7345ms
+2024-12-16 04:58:47.918 -05:00 [INF] Executed endpoint 'Personas.Controllers.UsuarioController.ConsultarUsuario (Personas)'
+2024-12-16 04:58:47.919 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7204/api/Usuario/consultarUsuario/66 - - - 200 - application/json;+charset=utf-8 8.0306ms
+2024-12-16 04:58:48.365 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7204/api/Usuario/consultarUsuario/66 - -
+2024-12-16 04:58:48.366 -05:00 [INF] Executing endpoint 'Personas.Controllers.UsuarioController.ConsultarUsuario (Personas)'
+2024-12-16 04:58:48.366 -05:00 [INF] Route matched with {action = "ConsultarUsuario", controller = "Usuario"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ConsultarUsuario(Int32) on controller Personas.Controllers.UsuarioController (Personas).
+2024-12-16 04:58:48.366 -05:00 [INF] Iniciando ejecucion GetUserForId
+2024-12-16 04:58:48.371 -05:00 [INF] Executing OkObjectResult, writing value of type 'Personas.BE.Response.Response`1[[Personas.BE.Usuario.UsuarioModel, Personas.BE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-16 04:58:48.372 -05:00 [INF] Executed action Personas.Controllers.UsuarioController.ConsultarUsuario (Personas) in 5.6342ms
+2024-12-16 04:58:48.372 -05:00 [INF] Executed endpoint 'Personas.Controllers.UsuarioController.ConsultarUsuario (Personas)'
+2024-12-16 04:58:48.372 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7204/api/Usuario/consultarUsuario/66 - - - 200 - application/json;+charset=utf-8 6.3910ms
+2024-12-16 04:58:48.829 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7204/api/Usuario/consultarUsuario/66 - -
+2024-12-16 04:58:48.829 -05:00 [INF] Executing endpoint 'Personas.Controllers.UsuarioController.ConsultarUsuario (Personas)'
+2024-12-16 04:58:48.829 -05:00 [INF] Route matched with {action = "ConsultarUsuario", controller = "Usuario"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ConsultarUsuario(Int32) on controller Personas.Controllers.UsuarioController (Personas).
+2024-12-16 04:58:48.830 -05:00 [INF] Iniciando ejecucion GetUserForId
+2024-12-16 04:58:48.834 -05:00 [INF] Executing OkObjectResult, writing value of type 'Personas.BE.Response.Response`1[[Personas.BE.Usuario.UsuarioModel, Personas.BE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-16 04:58:48.834 -05:00 [INF] Executed action Personas.Controllers.UsuarioController.ConsultarUsuario (Personas) in 4.9297ms
+2024-12-16 04:58:48.835 -05:00 [INF] Executed endpoint 'Personas.Controllers.UsuarioController.ConsultarUsuario (Personas)'
+2024-12-16 04:58:48.835 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7204/api/Usuario/consultarUsuario/66 - - - 200 - application/json;+charset=utf-8 5.9490ms
+2024-12-16 04:59:03.403 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7204/api/Usuario/consultarUsuario/66 - -
+2024-12-16 04:59:03.417 -05:00 [INF] Executing endpoint 'Personas.Controllers.UsuarioController.ConsultarUsuario (Personas)'
+2024-12-16 04:59:03.418 -05:00 [INF] Route matched with {action = "ConsultarUsuario", controller = "Usuario"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ConsultarUsuario(Int32) on controller Personas.Controllers.UsuarioController (Personas).
+2024-12-16 04:59:03.419 -05:00 [INF] Iniciando ejecucion GetUserForId
+2024-12-16 04:59:35.664 -05:00 [INF] Executing OkObjectResult, writing value of type 'Personas.BE.Response.Response`1[[Personas.BE.Usuario.UsuarioModel, Personas.BE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-16 04:59:35.681 -05:00 [INF] Executed action Personas.Controllers.UsuarioController.ConsultarUsuario (Personas) in 32262.7934ms
+2024-12-16 04:59:35.703 -05:00 [INF] Executed endpoint 'Personas.Controllers.UsuarioController.ConsultarUsuario (Personas)'
+2024-12-16 04:59:35.704 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7204/api/Usuario/consultarUsuario/66 - - - 200 - application/json;+charset=utf-8 32306.2745ms
+2024-12-16 05:00:36.983 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7204/api/Usuario/consultarUsuario/66 - -
+2024-12-16 05:00:36.986 -05:00 [INF] Executing endpoint 'Personas.Controllers.UsuarioController.ConsultarUsuario (Personas)'
+2024-12-16 05:00:36.986 -05:00 [INF] Route matched with {action = "ConsultarUsuario", controller = "Usuario"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ConsultarUsuario(Int32) on controller Personas.Controllers.UsuarioController (Personas).
+2024-12-16 05:00:36.988 -05:00 [INF] Iniciando ejecucion GetUserForId
+2024-12-16 05:00:37.042 -05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Personas.BE.Response.Response`1[[Personas.BE.Usuario.UsuarioModel, Personas.BE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-16 05:00:37.045 -05:00 [INF] Executed action Personas.Controllers.UsuarioController.ConsultarUsuario (Personas) in 58.1416ms
+2024-12-16 05:00:37.045 -05:00 [INF] Executed endpoint 'Personas.Controllers.UsuarioController.ConsultarUsuario (Personas)'
+2024-12-16 05:00:37.046 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7204/api/Usuario/consultarUsuario/66 - - - 400 - application/json;+charset=utf-8 63.2722ms
+2024-12-16 05:00:41.204 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7204/api/Usuario/consultarUsuario/1 - -
+2024-12-16 05:00:41.205 -05:00 [INF] Executing endpoint 'Personas.Controllers.UsuarioController.ConsultarUsuario (Personas)'
+2024-12-16 05:00:41.205 -05:00 [INF] Route matched with {action = "ConsultarUsuario", controller = "Usuario"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ConsultarUsuario(Int32) on controller Personas.Controllers.UsuarioController (Personas).
+2024-12-16 05:00:41.206 -05:00 [INF] Iniciando ejecucion GetUserForId
+2024-12-16 05:00:41.217 -05:00 [INF] Executing OkObjectResult, writing value of type 'Personas.BE.Response.Response`1[[Personas.BE.Usuario.UsuarioModel, Personas.BE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-16 05:00:41.218 -05:00 [INF] Executed action Personas.Controllers.UsuarioController.ConsultarUsuario (Personas) in 12.9522ms
+2024-12-16 05:00:41.218 -05:00 [INF] Executed endpoint 'Personas.Controllers.UsuarioController.ConsultarUsuario (Personas)'
+2024-12-16 05:00:41.218 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7204/api/Usuario/consultarUsuario/1 - - - 200 - application/json;+charset=utf-8 13.9267ms
+2024-12-16 05:00:44.991 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7204/api/Usuario/consultarUsuario/2 - -
+2024-12-16 05:00:44.992 -05:00 [INF] Executing endpoint 'Personas.Controllers.UsuarioController.ConsultarUsuario (Personas)'
+2024-12-16 05:00:44.992 -05:00 [INF] Route matched with {action = "ConsultarUsuario", controller = "Usuario"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ConsultarUsuario(Int32) on controller Personas.Controllers.UsuarioController (Personas).
+2024-12-16 05:00:44.993 -05:00 [INF] Iniciando ejecucion GetUserForId
+2024-12-16 05:00:44.999 -05:00 [INF] Executing OkObjectResult, writing value of type 'Personas.BE.Response.Response`1[[Personas.BE.Usuario.UsuarioModel, Personas.BE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-16 05:00:44.999 -05:00 [INF] Executed action Personas.Controllers.UsuarioController.ConsultarUsuario (Personas) in 7.0885ms
+2024-12-16 05:00:44.999 -05:00 [INF] Executed endpoint 'Personas.Controllers.UsuarioController.ConsultarUsuario (Personas)'
+2024-12-16 05:00:44.999 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7204/api/Usuario/consultarUsuario/2 - - - 200 - application/json;+charset=utf-8 8.2220ms
